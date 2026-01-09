@@ -61,7 +61,20 @@ You can secure, manage, save, restore, and verify switch configurations.
 
 ---
 
-### MODULE 2 — VLANs & Trunking
+### MODULE 2 — Inter-VLAN Routing
+**Focus:** Enabling communication between VLANs
+
+Topics include:
+- Router-on-a-Stick
+- Sub-interfaces
+- Encapsulation errors
+
+Outcome:
+You can route traffic between VLANs and troubleshoot inter-VLAN failures.
+
+---
+
+### MODULE 3 — VLANs & Trunking
 **Focus:** Layer 2 segmentation and trunking logic
 
 Topics include:
@@ -72,19 +85,6 @@ Topics include:
 
 Outcome:
 You can segment a LAN, configure trunks, and fix VLAN communication issues.
-
----
-
-### MODULE 3 — Inter-VLAN Routing
-**Focus:** Enabling communication between VLANs
-
-Topics include:
-- Router-on-a-Stick
-- Sub-interfaces
-- Encapsulation errors
-
-Outcome:
-You can route traffic between VLANs and troubleshoot inter-VLAN failures.
 
 ---
 
@@ -102,41 +102,7 @@ You can explain, verify, and control STP behavior in redundant networks.
 
 ---
 
-### MODULE 5 — Routing Fundamentals
-**Focus:** How routers make forwarding decisions
-
-Topics include:
-- Routing tables
-- Static routes
-- Default routes
-- Administrative distance (conceptual)
-
-Outcome:
-You can read routing tables and manually control packet paths.
-
----
-
-### MODULE 6 — Dynamic Routing Protocols
-
-#### EIGRP
-- Neighbor relationships
-- Metrics
-- AS mismatches
-
-Outcome:
-You can configure, verify, and troubleshoot EIGRP.
-
-#### OSPF
-- Link-state logic
-- Area 0
-- Neighbor and area mismatches
-
-Outcome:
-You can configure single-area OSPF and fix common issues.
-
----
-
-### MODULE 7 — DHCP
+### MODULE 5 — DHCP
 **Focus:** Automatic IP addressing
 
 Topics include:
@@ -149,7 +115,7 @@ You can deploy DHCP across multiple subnets and diagnose failures.
 
 ---
 
-### MODULE 8 — NAT
+### MODULE 6 — NAT
 **Focus:** Private-to-public address translation
 
 Topics include:
@@ -163,7 +129,7 @@ You can configure, verify, and troubleshoot NAT in real scenarios.
 
 ---
 
-### MODULE 9 — PPP & PPPoE
+### MODULE 7 — PPP & PPPoE
 **Focus:** WAN connectivity (IMPORTANT)
 
 Topics include:
@@ -174,19 +140,6 @@ Topics include:
 
 Outcome:
 You can configure authenticated PPP links and understand ISP-style PPPoE access.
-
----
-
-### MODULE 10 — Integration & Troubleshooting
-**Focus:** Real-world thinking
-
-Topics include:
-- End-to-end traffic flow
-- Network design logic
-- Systematic troubleshooting
-
-Outcome:
-You can integrate all Networking 2 topics and troubleshoot complex, broken networks.
 
 ---
 
