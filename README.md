@@ -256,6 +256,6 @@ Always follow your institution’s syllabus and assessment requirements.
 ---
 
 ## Contact & Links
-- **Email:** hussainali.networking@gmail.com  
-- **GitHub:** https://github.com/Hussain-Networking  
-- **YouTube:** https://www.youtube.com/@Hussain.Networking
+- [**Email**](mailto:hussainali.networking@gmail.com) 
+- [**GitHub**](https://github.com/HussainAli-Networking)  
+- [**YouTube**](https://www.youtube.com/@Hussain.Networking)
