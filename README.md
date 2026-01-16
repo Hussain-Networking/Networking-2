@@ -6,7 +6,6 @@ It combines:
 - Concept explanations
 - Packet Tracer labs
 - Configuration demos
-- Troubleshooting scenarios
 - Structured revision material
 
 The methodology is practical and engineering-focused:
@@ -21,7 +20,6 @@ This repository supports a **Networking 2 curriculum** delivered through:
 - Concept-based YouTube videos
 - Configuration and demo videos
 - Packet Tracer labs
-- Troubleshooting-driven learning
 - Exam-oriented revision material
 
 **Final outcome:**  
@@ -50,15 +48,13 @@ No topic is considered complete without a **working lab and verification**.
 **Focus:** Switch fundamentals and secure management
 
 Topics include:
-- LAN design principles
-- Switch hardware components
-- Cisco IOS basics
-- Configuration files (running-config vs startup-config)
-- Management IP configuration
-- Console and VTY security
+- EIGRP configuration 
+- OSPF configuration 
+- Vlan segmentation  
+- L2 Security 
 
 **Outcome:**  
-You can securely configure, manage, save, restore, and verify switch configurations.
+You can securely configure, manage, save, and verify router and switch configurations.
 
 ---
 
@@ -80,19 +76,13 @@ You can securely configure, manage, save, restore, and verify switch configurati
 - STP operation and port roles
 - Root bridge election and priority
 - Port states: Blocking, Listening, Learning, Forwarding, Disabled
-- STP enhancements:
-  - Rapid Spanning Tree Protocol (RSTP)
-  - Multiple Spanning Tree Protocol (MSTP)
-  - PortFast, BPDU Guard, Root Guard
-- Troubleshooting STP-related issues
 
 ## Outcome
 You will be able to:
 - Manage VLANs efficiently across multiple switches using VTP
 - Prevent Layer 2 loops in redundant networks using STP
-- Configure, verify, and troubleshoot VTP and STP
-- Apply STP enhancements for faster convergence and safer networks
-
+- Configure, verify, VTP and STP
+  
 ---
 
 ### MODULE 3 — LAN Segmentation & Inter-VLAN Routing 
@@ -112,8 +102,7 @@ You will be able to:
 You will be able to:
 - Segment a LAN
 - Enable inter-VLAN communication
-- Troubleshoot Layer 2 issues
-
+  
 ---
 
 ### MODULE 4 — Network Redundancy & High Availability  
@@ -125,7 +114,6 @@ Topics include:
 - Gateway redundancy concepts
 - HSRP operation and roles
 - EtherChannel load balancing
-- Redundant link troubleshooting
 
 **Outcome:**  
 You can build redundant networks and verify high availability behavior.
@@ -243,7 +231,6 @@ Each Packet Tracer lab includes:
 - Clear objectives
 - Required commands
 - Verification steps
-- At least one intentional failure
 
 Labs are designed to teach **why things break**, not just how to configure them.
 
@@ -251,9 +238,7 @@ Labs are designed to teach **why things break**, not just how to configure them.
 
 ## Tools & Environment
 - **Packet Tracer** (primary student labs)
-- **EVE-NG** (advanced labs and extensions)
-- **Cisco IOS CLI**
-- Verification-driven troubleshooting (`show`, `debug`, packet flow)
+- Verification-driven troubleshooting (`show`, `debug`, `packet flow`)
 
 ---
 
