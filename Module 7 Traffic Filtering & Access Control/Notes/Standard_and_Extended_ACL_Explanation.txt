@@ -1,0 +1,104 @@
+EXTENDED AND STANDARD ACL EXPLANATION 
+================================================
+
+ACCESS CONTROL LIST (ACL)
+
+An Access Control List (ACL) is a set of rules used on Cisco routers to control traffic.
+ACLs decide whether packets are permitted or denied when entering or leaving an interface.
+
+There are two main ACL types:
+- Standard ACL
+- Extended ACL
+
+--------------------------------------------------
+STANDARD ACL
+
+A Standard ACL filters traffic based ONLY on the source IP address.
+
+It does NOT check:
+- Destination IP address
+- Protocol type
+- Port numbers
+
+Because of this limitation, Standard ACLs are simple but dangerous if placed incorrectly.
+
+PLACEMENT RULE:
+Standard ACLs should be placed as close to the DESTINATION as possible.
+
+REASON:
+Blocking traffic near the source may unintentionally block access to other networks.
+
+STANDARD ACL NUMBER RANGE:
+1–99 and 1300–1999
+
+CISCO STANDARD ACL EXAMPLE:
+
+Block host 192.168.10.50 from accessing a network.
+
+Router(config)# access-list 10 deny host 192.168.10.50
+Router(config)# access-list 10 permit any
+
+Apply the ACL to an interface (inbound or outbound):
+
+Router(config)# interface g0/0
+Router(config-if)# ip access-group 10 out
+
+--------------------------------------------------
+EXTENDED ACL
+
+An Extended ACL provides detailed traffic control.
+It can filter traffic based on multiple parameters.
+
+Extended ACL can match:
+- Source IP address
+- Destination IP address
+- Protocol (TCP, UDP, ICMP)
+- Port numbers (HTTP, HTTPS, FTP, SSH, etc.)
+
+PLACEMENT RULE:
+Extended ACLs should be placed as close to the SOURCE as possible.
+
+REASON:
+Blocking unwanted traffic early saves bandwidth and improves security.
+
+EXTENDED ACL NUMBER RANGE:
+100–199 and 2000–2699
+
+CISCO EXTENDED ACL EXAMPLE:
+
+Allow HTTP traffic from 192.168.1.0/24 to server 10.10.10.10
+Block all other traffic from that subnet.
+
+Router(config)# access-list 110 permit tcp 192.168.1.0 0.0.0.255 host 10.10.10.10 eq 80
+Router(config)# access-list 110 deny ip 192.168.1.0 0.0.0.255 any
+
+Apply the ACL near the source:
+
+Router(config)# interface g0/1
+Router(config-if)# ip access-group 110 in
+
+--------------------------------------------------
+IMPLICIT DENY
+
+All ACLs end with an implicit deny statement.
+
+This means:
+Any traffic that does NOT match a permit rule is automatically denied.
+
+That is why ACLs often break connectivity if permit statements are missing.
+
+--------------------------------------------------
+SUMMARY
+
+Standard ACL:
+- Matches source IP only
+- Simple but limited
+- Placed near the destination
+
+Extended ACL:
+- Matches source, destination, protocol, and ports
+- Precise and secure
+- Placed near the source
+
+--------------------------------------------------
+END OF FILE
